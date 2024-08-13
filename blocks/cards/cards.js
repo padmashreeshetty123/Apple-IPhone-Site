@@ -15,4 +15,25 @@ export default function decorate(block) {
   ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
   block.append(ul);
+  const slideNavButtons = document.createElement('div');
+    slideNavButtons.classList.add('navigation-buttons');
+    slideNavButtons.innerHTML = `
+      <button type="button" class= "prev" aria-label="${placeholders.previousSlide || 'Previous Slide'}"><</button>
+      <button type="button" class="next" aria-label="${placeholders.nextSlide || 'Next Slide'}">></button>
+    `;
+    block.append(slideNavButtons);
+
+    const next_button=document.querySelectorAll('.next')[0];
+ 
+    next_button.addEventListener('click',()=>{
+      const ul=document.querySelectorAll('.cards ul')[0];
+      console.log(ul)
+      ul.scrollLeft = 200;
+    })
+    const prev_button=document.querySelectorAll('.prev')[0];
+  prev_button.addEventListener('click',()=>{
+      const ul=document.querySelectorAll('.cards ul')[0];
+      console.log(ul)
+      ul.scrollLeft = -200;
+    })
 }

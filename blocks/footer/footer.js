@@ -17,4 +17,25 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
+const all_h5s=footer.querySelectorAll('div > .section:nth-child(2) > div > h5');
+console.log(all_h5s)
+Array(...all_h5s).map((h5)=>{
+    console.log(h5)
+    var button=document.createElement('button');
+    button.textContent=">";
+   button.addEventListener('click',()=>{
+    var next_element_sibling=h5.nextElementSibling;
+    if(next_element_sibling.style.display=="block"){
+next_element_sibling.style.display="none";
+button.textContent=">";
+    }
+    else{
+      button.textContent="<";
+      next_element_sibling.style.display="block";
+    }
+   });
+    h5.append(button);
+  })
+
+
 }

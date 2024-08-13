@@ -147,13 +147,14 @@ export default async function decorate(block) {
   }
 
   // hamburger for mobile
+  const nav_tool=nav.querySelector('.nav-tools');
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');
   hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
-      <span class="nav-hamburger-icon"></span>
+      <img src="../../icons/nav-hamburger.png" />
     </button>`;
   hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
-  nav.prepend(hamburger);
+  nav_tool.append(hamburger);
   nav.setAttribute('aria-expanded', 'false');
   // prevent mobile nav behavior on window resize
   toggleMenu(nav, navSections, isDesktop.matches);
@@ -163,4 +164,47 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
-}
+  
+  var nav_sections=document.querySelector('.nav-sections');
+  var a_items=nav_sections.querySelectorAll("ul li");
+  var dropdown_items=document.querySelectorAll('.dropdown');
+  var dropdown_container=document.querySelector('.dropdown-container');
+  console.log(dropdown_container)
+
+
+Array(...a_items).map((a,i)=>(a.addEventListener('mouseover',(event)=>{
+  Array(...a_items).map((a,i)=>{
+    dropdown_items[i].style.display="none";
+    console.log(i);
+  dropdown_items[i].querySelector('div div').style.display="none";
+  console.log(dropdown_items[i].querySelector('div div'));
+  
+  })
+  console.log(a)
+  dropdown_items[i].style.display="block";
+  dropdown_container.style.display="block";
+  // console.log(i);
+dropdown_items[i].querySelector('div div').style.display="block";
+console.log(dropdown_items[i].querySelector('div div'));
+console.log(dropdown_items[i].querySelector('div div'))
+
+
+})))
+
+window.addEventListener('mouseover',(event)=>{
+  if(event.clientY>400)
+    {
+      Array(...a_items).map((a,i)=>{
+        dropdown_items[i].style.display="none";
+        console.log(i);
+      dropdown_items[i].querySelector('div div').style.display="none";
+      console.log(dropdown_items[i].querySelector('div div'));
+      dropdown_container.style.display="none";
+      
+      })
+    }
+})
+
+  }
+
+

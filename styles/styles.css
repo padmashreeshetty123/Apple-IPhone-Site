@@ -73,6 +73,8 @@
 body {
   display: none;
   margin: 0;
+  max-width: 1240px;
+  /* overflow-x: hidden; */
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
