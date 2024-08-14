@@ -261,14 +261,14 @@ main .banner-2-container p picture:first-child
     display: none;
 }
 main .banner-2-container .banner-2 div > div:last-child{
-    margin-left: -100px;
+  
     position: absolute;
-    top:0;
+  
 height: 100%;
 display: flex;
 flex-direction: column;
-
-width: 60%;
+padding: 0;
+width: 40%;
 justify-content: center;
 align-items:center;
 }
