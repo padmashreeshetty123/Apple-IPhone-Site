@@ -110,7 +110,7 @@ height: auto;
   }
   .accordion .accordion-item:nth-child(1) img{
     
-    transform: translateX(250px) scale(1.6);
+    transform: translateX(250px) scale(1.5);
 
   }
   .accordion .accordion-item h3{
@@ -144,7 +144,7 @@ height: auto;
   .accordion-item-body p img{
     position: absolute;
     right: 0;
-    bottom: -100px;
+    bottom: -50px;
 min-height:80vh;
   min-width: 50vw  !important;
     object-fit: contain;
