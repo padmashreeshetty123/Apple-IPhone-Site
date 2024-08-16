@@ -76,12 +76,19 @@ main .banner-2-container p picture:last-child
     margin-bottom: 40px !important;
     padding-left: 60px !important;
 }
-.banner-2-container .default-content-wrapper:nth-child(2) a{
+.banner-2-container .default-content-wrapper a{
   background-color: transparent;
 color: #0066cc;
 font-size: 14px;
 padding: 0 !important;
 
+}
+.banner-2-container .default-content-wrapper :nth-child(5) {
+ flex-direction: column !important ;
+  
+  }
+.banner-2-container .default-content-wrapper:nth-child(2){
+    flex-direction: column;
 }
 .banner-2-container .default-content-wrapper:nth-child(2) h1{
     font-size: 28px;
