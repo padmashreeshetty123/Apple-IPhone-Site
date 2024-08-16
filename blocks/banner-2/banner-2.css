@@ -101,43 +101,18 @@ padding: 0 !important;
 
   
 }
-.banner-2-container .default-content-wrapper:nth-child(3) h1{
-    font-size: 28px !important;
-    line-height: 32px;
-  
-    /* display: inline-block; */
-    padding: 0 !important;
-    margin: 0 !important;
 
-    padding-left: 80px;
-    font-family: 'sf pro display' !important;
-
-  
-}
-.banner-2-container .default-content-wrapper:nth-child(3){
+.banner-2-container .default-content-wrapper:nth-child(5){
 
  flex-direction: column;
 }
-.banner-2-container .default-content-wrapper:nth-child(3) a{
+.banner-2-container .default-content-wrapper:nth-child(5) a{
     background-color: transparent;
     color: #0066cc;
     font-size: 14px;
     font-weight: normal;
   padding: 0 !important;
   margin: 0 !important;
-}
-.banner-2-container .default-content-wrapper:nth-child(3) h1{
-    font-size: 28px !important;
-    line-height: 32px;
-  
-    /* display: inline-block; */
-    padding: 0 !important;
-    margin: 0 !important;
-
-
-    font-family: 'sf pro display' !important;
-
-  
 }
 .banner-2-container .default-content-wrapper:nth-child(5) h1{
     font-size: 28px !important;
@@ -152,9 +127,14 @@ padding: 0 !important;
 
   
 }
-@media (min-width:720px) {
 
-    .banner-2-container .default-content-wrapper:nth-child(2){
+
+@media (min-width:720px) {
+    .banner-2-container .default-content-wrapper:nth-child(3){
+       margin:50px 0 !important;
+      
+    }
+    .banner-2-container .default-content-wrapper:nth-child(4){
         padding-top: 100px !important;
     }
     main .banner-2-container .banner-2 div > div:last-child h3{
@@ -166,13 +146,13 @@ padding: 0 !important;
 
 
 }
-.banner-2-container .default-content-wrapper:nth-child(3){
+.banner-2-container .default-content-wrapper:nth-child(5){
     display: flex;
 margin-bottom: 30px !important;
 flex-direction: row;
     justify-content: space-between;
 }
-.banner-2-container .default-content-wrapper:nth-child(3) a{
+.banner-2-container .default-content-wrapper:nth-child(5) a{
     background-color: transparent;
     color: #0066cc;
     font-size: 16px;
@@ -180,23 +160,10 @@ flex-direction: row;
     padding:0 80px !important;
     margin-top: 10px !important;
 }
-.banner-2-container .default-content-wrapper:nth-child(3) h1{
-    font-size: 56px !important;
-    line-height: 60px;
-  
-    /* display: inline-block; */
-    padding: 0 !important;
-    margin: 0 !important;
-
-
-    font-family: 'sf pro display' !important;
-
-  
-}
 .banner-2-container .default-content-wrapper:nth-child(5) h1{
     font-size: 56px !important;
     line-height: 60px;
-  
+  width: 50%;
     /* display: inline-block; */
     padding: 0 !important;
     margin: 0 !important;
@@ -206,6 +173,7 @@ flex-direction: row;
 
   
 }
+
 .banner-2-container .default-content-wrapper:nth-child(2) h1{
     font-size: 56px;
     line-height: 60px;
