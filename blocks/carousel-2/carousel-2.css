@@ -24,7 +24,11 @@ main .section:nth-child(4)
    object-fit: contain;
 
     }
- 
+    .carousel-2-slides li .carousel-2-slide-image{
+   
+   
+       }
+     
    
  
      
