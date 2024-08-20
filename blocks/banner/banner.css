@@ -1,0 +1,292 @@
+/* first banner */
+main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child {
+  padding: 0 20px;
+  width: 90%;
+  min-height: 65vh;
+  position: relative;
+}
+.banner-wrapper {
+  padding: 0 !important;
+}
+main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child
+  > div
+  > div:first-child
+  > p:first-child
+  > picture:nth-child(2) {
+  display: none;
+}
+main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child
+  > div
+  > div:nth-child(2)
+  > .button-container:hover a
+  {
+background-color: #e8e0d2;
+
+color: black;
+  }
+main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child
+  > div
+  > div:nth-child(2)
+  > .button-container
+  a {
+  background-color: transparent;
+  border: 1px solid #e8e0d2;
+  color: inherit;
+  margin: 0;
+  font-size: 14px;
+  font-family: "sf pro display";
+}
+main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child
+  > div
+  > div:nth-child(2)
+  > p:last-child {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+}
+main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child
+  > div
+  > div:nth-child(2)
+  > p:last-child
+  a {
+  color: inherit;
+  border-radius: 50%;
+  border: 1px solid #e8e0d2;
+  /* padding:3px; */
+  text-align: center;
+  line-height: normal;
+  font-size: 12px;
+  min-width: 15px;
+  min-height: 15px;
+  max-width: 15px;
+  max-height: 15px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child
+  > div
+  > div:nth-child(2) {
+  color: #e8e0d2;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+
+  /* width: 50%; */
+  font-size: 17px;
+  font-family: "sf pro display";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* gap:40px; */
+  /* justify-content: center; */
+  flex-wrap: wrap;
+}
+
+main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child
+  > div
+  > div:nth-child(2)
+  img {
+  display: none;
+}
+main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child
+  > div
+  > div:first-child
+  > p:first-child
+  > picture:first-child
+  > img {
+  /* max-width:100%; */
+  width: 90%;
+  border-radius: 40px;
+  position: absolute;
+  height: 100%;
+  /* overflow: hidden; */
+  object-fit: cover;
+  /* margin-left:-100px; */
+  /* object-position: -30px -30px; */
+}
+
+/* second banner */
+main
+  .banner-container:nth-child(3) .default-content-wrapper,main
+  .banner-container:nth-child(3) .banner-wrapper:last-child{
+display: none;
+  }
+
+@media (min-width: 720px) {
+  /* first banner */
+  main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child{
+height: 90vh;
+}
+  main
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child {
+    padding: 0 40px;
+    width: 90vw;
+  }
+  main
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child
+    > div
+    > div:first-child
+    > p:first-child
+    > picture:nth-child(1) {
+    display: none;
+  }
+  main
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child
+    > div
+    > div:first-child
+    > p:first-child
+    > picture:nth-child(2) {
+    /* max-width:100%; */
+    display: inline-block !important;
+  }
+  main
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child
+    > div
+    > div:first-child
+    > p:first-child
+    > picture:nth-child(2)
+    img {
+    max-width: 90vw;
+    border-radius: 40px;
+    position: absolute;
+    height: 90vh;
+    /* overflow: hidden; */
+    object-fit: cover;
+    /* margin-left:-100px; */
+    /* object-position: -30px -30px; */
+  }
+  main
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child
+    > div
+    > div:nth-child(2)
+    img {
+    display: inline-block;
+    width: 400px;
+margin-top:200px;
+
+  }
+
+  main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child
+  > div
+  > div:nth-child(2)::before
+ {
+content: 'Shot on iPhone 15 Pro';
+color: #e8e0d2;
+font-size: 30px;
+margin-bottom: 150px;
+position: absolute;
+font-family: inherit;
+
+}
+
+  main
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child
+    > div
+    > div:nth-child(2) {
+    /* flex-wrap: wrap; */
+  padding-left: 150px;
+  padding-top: 50px;
+  margin-top: 100px;
+width:40%;
+height: 100%;
+
+    display: flex;
+gap:20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  main
+  .banner-container:nth-child(3)
+  .banner-wrapper:first-child
+  > .banner:first-child
+  > div
+  > div:nth-child(2) .button-container a{
+padding: 15px 25px;
+font-size: 17px;
+  }
+  main
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child
+    > div
+    > div:nth-child(2) .button-container{
+      margin-top:-200px;
+     
+    }
+    main
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child
+    > div
+    > div:nth-child(2) p:last-child
+    {
+      margin-top:-210px;
+    }
+
+/* second banner */
+    main
+  .banner-container:nth-child(3) .default-content-wrapper{
+   display: block;
+margin-top:150px !important;
+/* margin-bottom:150px !important; */
+padding-left: 60px !important;
+
+  }
+  .banner-container:nth-child(3) .default-content-wrapper h2{
+   font-size: 56px;
+font-family: 'sf pro display';
+  }
+
+}
