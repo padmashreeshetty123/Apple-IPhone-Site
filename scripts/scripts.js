@@ -56,9 +56,9 @@ function autolinkModals(element) {
 }
 /**
  * Builds all synthetic blocks in a container element.
- * @param {Element} a The container element
+ * @param {Element} main The container element
  */
-function buildAutoBlocks(a) {
+function buildAutoBlocks(main) {
   try {
     buildHeroBlock(main);
 
