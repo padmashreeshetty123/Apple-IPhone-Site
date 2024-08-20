@@ -9,8 +9,7 @@
   overflow: hidden;
 }
 
-.accordion details[open] summary {
-}
+
 
 .accordion details summary::-webkit-details-marker {
   display: none;

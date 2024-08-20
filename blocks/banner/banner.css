@@ -27,12 +27,12 @@ main
   > .banner:first-child
   > div
   > div:nth-child(2)
-  > .button-container:hover a
-  {
-background-color: #e8e0d2;
+  > .button-container:hover
+  a {
+  background-color: #e8e0d2;
 
-color: black;
-  }
+  color: black;
+}
 main
   .banner-container:nth-child(3)
   .banner-wrapper:first-child
@@ -139,20 +139,19 @@ main
 }
 
 /* second banner */
-main
-  .banner-container:nth-child(3) .default-content-wrapper,main
-  .banner-container:nth-child(3) .banner-wrapper:last-child{
-display: none;
-  }
+main .banner-container:nth-child(3) .default-content-wrapper,
+main .banner-container:nth-child(3) .banner-wrapper:last-child {
+  display: none;
+}
 
 @media (min-width: 720px) {
   /* first banner */
   main
-  .banner-container:nth-child(3)
-  .banner-wrapper:first-child
-  > .banner:first-child{
-height: 90vh;
-}
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child {
+    height: 90vh;
+  }
   main
     .banner-container:nth-child(3)
     .banner-wrapper:first-child
@@ -208,25 +207,22 @@ height: 90vh;
     img {
     display: inline-block;
     width: 400px;
-margin-top:200px;
-
+    margin-top: 200px;
   }
 
   main
-  .banner-container:nth-child(3)
-  .banner-wrapper:first-child
-  > .banner:first-child
-  > div
-  > div:nth-child(2)::before
- {
-content: 'Shot on iPhone 15 Pro';
-color: #e8e0d2;
-font-size: 30px;
-margin-bottom: 150px;
-position: absolute;
-font-family: inherit;
-
-}
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child
+    > div
+    > div:nth-child(2)::before {
+    content: "Shot on iPhone 15 Pro";
+    color: #e8e0d2;
+    font-size: 30px;
+    margin-bottom: 150px;
+    position: absolute;
+    font-family: inherit;
+  }
 
   main
     .banner-container:nth-child(3)
@@ -235,58 +231,57 @@ font-family: inherit;
     > div
     > div:nth-child(2) {
     /* flex-wrap: wrap; */
-  padding-left: 150px;
-  padding-top: 50px;
-  margin-top: 100px;
-width:40%;
-height: 100%;
+    padding-left: 150px;
+    padding-top: 50px;
+    margin-top: 100px;
+    width: 40%;
+    height: 100%;
 
     display: flex;
-gap:20px;
+    gap: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
   main
-  .banner-container:nth-child(3)
-  .banner-wrapper:first-child
-  > .banner:first-child
-  > div
-  > div:nth-child(2) .button-container a{
-padding: 15px 25px;
-font-size: 17px;
+    .banner-container:nth-child(3)
+    .banner-wrapper:first-child
+    > .banner:first-child
+    > div
+    > div:nth-child(2)
+    .button-container
+    a {
+    padding: 15px 25px;
+    font-size: 17px;
   }
   main
     .banner-container:nth-child(3)
     .banner-wrapper:first-child
     > .banner:first-child
     > div
-    > div:nth-child(2) .button-container{
-      margin-top:-200px;
-     
-    }
-    main
+    > div:nth-child(2)
+    .button-container {
+    margin-top: -200px;
+  }
+  main
     .banner-container:nth-child(3)
     .banner-wrapper:first-child
     > .banner:first-child
     > div
-    > div:nth-child(2) p:last-child
-    {
-      margin-top:-210px;
-    }
-
-/* second banner */
-    main
-  .banner-container:nth-child(3) .default-content-wrapper{
-   display: block;
-margin-top:150px !important;
-/* margin-bottom:150px !important; */
-padding-left: 60px !important;
-
-  }
-  .banner-container:nth-child(3) .default-content-wrapper h2{
-   font-size: 56px;
-font-family: 'sf pro display';
+    > div:nth-child(2)
+    p:last-child {
+    margin-top: -210px;
   }
 
+  /* second banner */
+  main .banner-container:nth-child(3) .default-content-wrapper {
+    display: block;
+    margin-top: 150px !important;
+    /* margin-bottom:150px !important; */
+    padding-left: 60px !important;
+  }
+  .banner-container:nth-child(3) .default-content-wrapper h2 {
+    font-size: 56px;
+    font-family: "sf pro display";
+  }
 }

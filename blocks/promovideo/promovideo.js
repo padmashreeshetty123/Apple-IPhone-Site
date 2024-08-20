@@ -7,12 +7,11 @@ export default async function decorate() {
   console.log(video);
   video.setAttribute("loop", true);
 
-
   const button = document.createElement("button");
   button.addEventListener("click", () => {
     var img = document.querySelector(".play-pause img");
     console.log(img);
-    if (img.getAttribute('src') === "../../icons/pause.png") {
+    if (img.getAttribute("src") === "../../icons/pause.png") {
       img.setAttribute("src", "../../icons/play.png");
       video.pause();
     } else {
@@ -27,7 +26,7 @@ export default async function decorate() {
   // promo_video.querySelector('p').append(video);
   promo_video.querySelector("p").removeChild(link);
   promo_video.querySelector("div > div").append(video);
- 
+
   promo_video.querySelector("div > div").append(button);
   var i = 1;
   var lastScrollTop = 0;
@@ -61,7 +60,5 @@ export default async function decorate() {
     lastScrollTop = st <= 0 ? 0 : st;
   });
 
- document.querySelector('video').setAttribute('autoplay',true);
- 
-
+  document.querySelector("video").setAttribute("autoplay", true);
 }
